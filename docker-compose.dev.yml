@@ -8,17 +8,17 @@
 # For more information see https://docs.docker.com/compose/extends/
 
 services:
-  # a4all:
-  #   build:
-  #     context: ./a4all
-  #     dockerfile: Dockerfile
-  #     target: dev
-  #     args:
-  #       NODE_ENV: development
-  #   ports:
-  #     - "3000:3000"
-  #   networks:
-  #     - "polis-net"
+  a4all:
+    build:
+      context: ./a4all
+      dockerfile: Dockerfile
+      target: dev
+      args:
+        NODE_ENV: development
+    ports:
+      - "3000:3000"
+    networks:
+      - "polis-net"
 
   server:
     build:
